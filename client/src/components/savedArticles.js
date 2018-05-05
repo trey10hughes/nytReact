@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 
-class ApiResults extends Component {
+class SavedArticles extends Component {
     
 
 
@@ -16,6 +16,6 @@ class ApiResults extends Component {
     }
 }
 
-export default ApiResults;
+export default SavedArticles;
 
 

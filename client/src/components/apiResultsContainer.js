@@ -1,11 +1,11 @@
 import React, { Component } from "react";
+import ApiResults from './apiResults';
 
 
+class ApiResultsContainer extends Component {
 
-class ApiResults extends Component {
     // Setting the initial values of this.state
     state = {
-
     };
 
 
@@ -18,17 +18,18 @@ class ApiResults extends Component {
 
     render() {
 
+        console.log(typeof this.props.data);
+        
 
-      
         return (
             <div>
-                {this}
+                This will contain the api results
             </div>
-
+            
         );
     }
 }
 
-export default ApiResults;
+export default ApiResultsContainer;
 
 

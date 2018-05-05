@@ -7,9 +7,11 @@ class App extends Component {
 
   state = {
     testTitle: "NYT React Search App",
-    testProps: "This is the SavedArticles component"
+    testProps: "This is the SavedArticles component",
+    dbQueryResults: ""
   }
 
+  //query the DB and set the state
   
 
   render() {
