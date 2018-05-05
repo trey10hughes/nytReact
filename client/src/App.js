@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
 import Search from "./components/Search";
-import ApiResults from "./components/apiResults";
 import SavedArticles from "./components/savedArticles";
 
 class App extends Component {
 
   state = {
     testTitle: "NYT React Search App",
-    testProps1: "This is the ApiResults component",
-    testProps2: "This is the SavedArticles component"
+    testProps: "This is the SavedArticles component"
   }
 
   
@@ -22,22 +20,9 @@ class App extends Component {
           <h2>{this.state.testTitle}</h2>
         </div>
         <Search />  
-        <ApiResults
-            test = {this.state.testProps1}
-         />
         <SavedArticles 
-            test = {this.state.testProps2}
+            test = {this.state.testProps}
         />
-
-        {
-          /* example of mapping properly
-          const expenses = this.state.sessionExpenseInfo.expenses.map((data, i) =>
-        <Expense key={i}
-          expense={data.expense}
-          total={data.total}
-          amount={data.myPortion}
-          owedTo={data.id} />
-         ) */}
       </div>
     );
   }
